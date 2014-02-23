@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Psychogeography</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_button">Next</string>
+    <string name="statementBlocksForward">Go blocks forward </string>
+    <string name="statementBlocksRight">Go blocks right</string>
+    <string name="statementBlocksBack">Go blocks back</string>
+    <string name="statementBlocksLeft">Go blocks Left</string>
+    <string name="statementClimbForward">Climb onto the nearest object and navigate your way forward a block without touching the ground</string>
+    <string name="statementClimbRight">Climb onto the nearest object and navigate your way right a block without touching the ground</string>
+    <string name="statementClimbBack">Climb onto the nearest object and navigate your way back a block without touching the ground</string>
+    <string name="statementClimbLeft">Climb onto the nearest object and navigate your way left a block without touching the ground</string>
+    <string name="statementFollowShirt">Follow a person with a colored shirt for blocks</string>
+	<string name="statementFollowPants">Follow a person with a colored pair of pants for blocks</string>
+	<string name="statementFollowShorts">Follow a person with a colored pair of shorts for blocks</string>
+	<string name="statementFollowHat">Follow a person with a colored hat for blocks</string>
+</resources>
