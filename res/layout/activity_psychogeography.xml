@@ -24,5 +24,7 @@
             android:width="80dp"
             android:height="60dp"
             android:layout_marginTop="40dp"
-            android:text="@string/next_button" />
+            android:text="@string/next_button" 
+            android:drawableRight="@drawable/arrow_right" 
+            android:drawablePadding="4dp"/>
 </LinearLayout>
