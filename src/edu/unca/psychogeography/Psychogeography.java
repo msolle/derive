@@ -2,6 +2,7 @@ package edu.unca.psychogeography;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ public class Psychogeography extends Activity {
 	private Button mNextButton;
 	private TextView mStatementTextView;
 	private static final float fontSize = 30;
+	private static final String TAG = "Psychogeography" ;
 	
 	private String[] color = new String[] {
 			"green", "blue", "orange",
@@ -79,6 +81,7 @@ public class Psychogeography extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Log.d(TAG, "onCreate(Bundle called");
 		setContentView(R.layout.activity_psychogeography);
 
 		// Array of statements
@@ -101,7 +104,33 @@ public class Psychogeography extends Activity {
 				updateQuestion();
 			}
 		});
-	}
+	} //End of onCreate(Bundle)
+	
+	@Override 
+    public void onStart() { 
+    	super.onStart(); 
+    	Log.d(TAG, "onStart() called");
+    }
+    
+    @Override 
+    public void onPause() { 
+    	super.onPause(); 
+    	Log.d(TAG, "onPause() called"); 
+    	} 
+    @Override 
+    public void onResume() { 
+    	super.onResume(); 
+    	Log.d(TAG, "onResume() called"); 
+    	}
+    @Override 
+    public void onStop() { 
+    	super.onStop(); 
+    	Log.d(TAG, "onStop() called"); 
+    	} 
+    @Override public void onDestroy() { 
+    	super.onDestroy(); 
+    	Log.d(TAG, "onDestroy() called");
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
